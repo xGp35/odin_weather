@@ -1,0 +1,104 @@
+{
+  "total_count": 273,
+  "results": [
+    {
+      "mrid": null,
+      "cause": null,
+      "communitydescriptor": "42003",
+      "customersrestored": null,
+      "metersaffected": 1,
+      "reportedstarttime": "2025-03-14T19:40:00+00:00",
+      "statuskind": null,
+      "utilitydisclaimer": null,
+      "incident": "{\"Location\": {\"kind\": \"electricalNetwork\", \"CoordinateSystem\": {\"crsUrn\": \"EPSG:4326\"}}}",
+      "outagearea": "{\"earliestReportedTime\": \"2025-03-14T19:40:00Z\", \"outageAreaKind\": \"county\"}",
+      "names": "[{\"name\": \"DUQUESNE LIGHT CO\", \"nameType\": \"UtilityName\", \"nameTypeAuthority\": \"EIA\"}, {\"name\": \"5487\", \"nameType\": \"UtilityId\", \"nameTypeAuthority\": \"EIA\"}]",
+      "estimatedrestorationtime": null,
+      "causekind": null,
+      "incident_cause": null,
+      "incident_location": "{\"kind\": \"electricalNetwork\", \"CoordinateSystem\": {\"crsUrn\": \"EPSG:4326\"}}",
+      "incident_location_kind": "electricalNetwork",
+      "outagearea_outageareakind": "county",
+      "geom": {
+        "type": "Feature",
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                [-79.871425, 40.197390999],
+                [-79.871696, 40.197300999],
+                [-79.87251, 40.197264999],
+                [-79.874857, 40.197220999],
+                [-79.877877, 40.197033999],
+                [-79.881115, 40.196646999],
+                [-79.885599, 40.195376999],
+                [-79.871425, 40.197390999]
+              ]
+            ]
+          ],
+          "type": "MultiPolygon"
+        },
+        "properties": {
+
+        }
+      },
+      "centroid": {
+        "lon": -79.981217113,
+        "lat": 40.4687889
+      },
+      "name": "DUQUESNE LIGHT CO,5487",
+      "state": "Pennsylvania"
+    },
+    {
+      "mrid": "be691428-8fb6-4fec-8115-f5d99568c6fe",
+      "cause": null,
+      "communitydescriptor": "37017",
+      "customersrestored": null,
+      "metersaffected": 1,
+      "reportedstarttime": null,
+      "statuskind": null,
+      "utilitydisclaimer": null,
+      "incident": "{\"Location\": {\"kind\": \"electricalNetwork\", \"CoordinateSystem\": {\"crsUrn\": \"EPSG:4326\"}}}",
+      "outagearea": "{\"outageAreaKind\": \"county\"}",
+      "names": "[{\"name\": \"FOUR COUNTY ELEC MEMBER CORP\", \"nameType\": \"UtilityName\", \"nameTypeAuthority\": \"EIA\"}, {\"name\": \"6640\", \"nameType\": \"UtilityId\", \"nameTypeAuthority\": \"EIA\"}]",
+      "estimatedrestorationtime": null,
+      "causekind": null,
+      "incident_cause": null,
+      "incident_location": "{\"kind\": \"electricalNetwork\", \"CoordinateSystem\": {\"crsUrn\": \"EPSG:4326\"}}",
+      "incident_location_kind": "electricalNetwork",
+      "outagearea_outageareakind": "county",
+      "geom": {
+        "type": "Feature",
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                [-78.494705, 34.856181999],
+                [-78.495151, 34.855680999],
+                [-78.495243, 34.855188999],
+                [-78.495445, 34.854978999],
+                [-78.496074, 34.855048999],
+                [-78.514572, 34.847037999],
+                [-78.513009, 34.848170999],
+                [-78.512017, 34.848922999],
+                [-78.507848, 34.851484999],
+                [-78.506288, 34.852572999],
+                [-78.494705, 34.856181999]
+              ]
+            ]
+          ],
+          "type": "MultiPolygon"
+        },
+        "properties": {
+
+        }
+      },
+      "centroid": {
+        "lon": -78.563700002,
+        "lat": 34.614632942
+      },
+      "name": "FOUR COUNTY ELEC MEMBER CORP,6640",
+      "state": "North Carolina"
+    }
+  ]
+}
