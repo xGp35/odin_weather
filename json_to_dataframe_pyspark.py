@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col, explode, expr
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType
+import json
 
 # Initialize Spark Session
 spark = SparkSession.builder \
@@ -10,12 +11,15 @@ spark = SparkSession.builder \
     .config("spark.sql.shuffle.partitions", "100") \
     .getOrCreate()
 
-# Read the JSON file
-# Note: wholeFile=True reads the entire file as one record
-df = spark.read.option("multiline", "true").json("template_odin_response.json")
+# First read JSON into Python variable
+with open('template_odin_response.json', 'r') as file:
+    json_data = json.load(file)
 
-# Select only the results array and explode it into separate rows
-df = df.select(explode(col("results")).alias("results")).select("results.*")
+# Extract only the results array
+records = json_data['results']
+
+# Convert Python list to Spark DataFrame
+df = spark.createDataFrame(records)
 
 # Define schema for nested JSON columns
 # Note: You might need to adjust these schemas based on your actual JSON structure
