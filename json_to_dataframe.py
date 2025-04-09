@@ -1,9 +1,17 @@
 import pandas as pd
 import json
+import requests
 
-# Read the JSON file
-with open('template_odin_response.json', 'r') as file:
-    data = json.load(file)
+url = "https://openenergyhub.ornl.gov/api/explore/v2.1/catalog/datasets/odin-real-time-outages-county/records?limit=20"
+
+response = requests.get(url)
+if response.status_code == 200:
+    data = response.json()
+    records = data["results"]
+
+# # Read the JSON file
+# with open('template_odin_response.json', 'r') as file:
+#     data = json.load(file)
 
 # Extract only the 'results' part
 records = data['results']
